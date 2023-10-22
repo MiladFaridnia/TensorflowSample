@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.faridnia.tensorflowsample"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.faridnia.tensorflowsample"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -81,5 +81,9 @@ dependencies {
     implementation("org.tensorflow:tensorflow-lite-task-vision:0.4.0")
     implementation("org.tensorflow:tensorflow-lite-gpu-delegate-plugin:0.4.0")
     implementation("org.tensorflow:tensorflow-lite-gpu:2.9.0")
+    // Tensorflow Lite dependencies
+    implementation ("org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2")
+    implementation ("com.google.android.gms:play-services-tflite-gpu:16.2.0")
+
 
 }
